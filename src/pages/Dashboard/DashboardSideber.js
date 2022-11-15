@@ -16,7 +16,7 @@ const DashboardSideber = ({ children }) => {
                     <h1 className='mb-4 text-center text-white font-bold text-2xl'> Visualization</h1>
                     {/*   Sidebar content here */}
                     <li className='bg-white rounded-3xl w-40'>
-                        <Link className='bg-transparent text-[#5433FF]' to='/dashboard'> <AiFillHome/>DESHBOARD</Link>
+                        <Link className='bg-transparent text-[#5433FF]' to='/'> <AiFillHome/>DESHBOARD</Link>
                     </li>
                     
                 </ul>

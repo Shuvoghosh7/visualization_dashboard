@@ -1,6 +1,9 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import Card from './Card/Card';
+import Chart from './Card/Chart/Chart';
+
+
 
 const DashboardHome = () => {
     const { pathname } = useLocation()
@@ -12,6 +15,10 @@ const DashboardHome = () => {
 
             </label>
             <Card />
+            <div className='mt-12'>
+                <Chart/>
+            </div>
+            
         </div>
     );
 };
