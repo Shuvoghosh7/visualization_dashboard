@@ -3,9 +3,9 @@ import { MdPersonAddAlt1 } from 'react-icons/md';
 import { AiFillRead } from 'react-icons/ai';
 import { BsFillCalendarEventFill } from 'react-icons/bs';
 import './Card.css'
-import { useQuery } from 'react-query';
+
 const Card = () => {
-    const { data: chartData, isLoading, refetch } = useQuery('chartData', () => fetch('http://localhost:5000/data').then(res => res.json()))
+    
     return (
         <div className='grid lg:grid-cols-4 gap-6 md:grid-cols-2'>
             <div className='card-contant'>

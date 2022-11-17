@@ -15,7 +15,7 @@ ChartJS.register(
 );
 
 const Chart = () => {
-    const { data: chartData, isLoading, refetch } = useQuery('chartData', () => fetch('http://localhost:5000/data').then(res => res.json()))
+    const { data: chartData, isLoading, refetch } = useQuery('chartData', () => fetch('https://visualization-dashboard-server-production.up.railway.app/data').then(res => res.json()))
 
     const data = {
         labels: chartData?.data?.map(x => x.region),
