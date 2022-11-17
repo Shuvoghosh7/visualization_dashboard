@@ -2,6 +2,8 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import Card from './Card/Card';
 import Chart from './Card/Chart/Chart';
+import LineChart from './Card/Chart/LineChart';
+import TopicandRelevance from './Card/Chart/TopicandRelevance';
 
 
 
@@ -17,6 +19,12 @@ const DashboardHome = () => {
             <Card />
             <div className='mt-12'>
                 <Chart/>
+            </div>
+            <div>
+                <TopicandRelevance/>
+            </div>
+            <div>
+                <LineChart/>
             </div>
             
         </div>
