@@ -16,7 +16,7 @@ ChartJS.register(
 
 const Chart = () => {
     const { data: chartData, isLoading, refetch } = useQuery('chartData', () => fetch('http://localhost:5000/data').then(res => res.json()))
-    console.log(chartData?.data)
+
     const data = {
         labels: chartData?.data?.map(x => x.region),
         datasets: [{
@@ -62,10 +62,10 @@ const Chart = () => {
         <div>
             <div>
 
-                <h1 className='text-2xl text-center my-5'>Region,intensity,likelihood</h1>
+                <h1 className='text-2xl text-center my-5 font-bold'>Region Intensity &Likelihood</h1>
                 <Bar
                     data={data}
-                    height={100}
+                    height={110}
                     options={options}
                 />
             </div>

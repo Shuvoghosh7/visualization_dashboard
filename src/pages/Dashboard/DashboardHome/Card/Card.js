@@ -3,7 +3,9 @@ import { MdPersonAddAlt1 } from 'react-icons/md';
 import { AiFillRead } from 'react-icons/ai';
 import { BsFillCalendarEventFill } from 'react-icons/bs';
 import './Card.css'
+import { useQuery } from 'react-query';
 const Card = () => {
+    const { data: chartData, isLoading, refetch } = useQuery('chartData', () => fetch('http://localhost:5000/data').then(res => res.json()))
     return (
         <div className='grid lg:grid-cols-4 gap-6 md:grid-cols-2'>
             <div className='card-contant'>
@@ -11,7 +13,7 @@ const Card = () => {
                     <MdPersonAddAlt1 className='icon'/>
                 </div>
                 <div className='card-text'>
-                    <p>Total Students</p>
+                    <p>Total Country</p>
                     <p>450</p>
                     <div className='progress'>
                         <div class="progress-bar"></div>
@@ -24,8 +26,8 @@ const Card = () => {
                     <MdPersonAddAlt1 className='icon'/>
                 </div>
                 <div className='card-text'>
-                    <p>New Students</p>
-                    <p>155</p>
+                    <p>Total Intensity</p>
+                    <p>255</p>
                     <div className='progress'>
                         <div class="progress-bar2"></div>
                     </div>
@@ -37,8 +39,8 @@ const Card = () => {
                     <AiFillRead className='icon'/>
                 </div>
                 <div className='card-text'>
-                    <p>Total Course</p>
-                    <p>55</p>
+                    <p>Total region</p>
+                    <p>155</p>
                     <div className='progress'>
                         <div class="progress-bar3"></div>
                     </div>
@@ -50,8 +52,8 @@ const Card = () => {
                     <BsFillCalendarEventFill className='icon'/>
                 </div>
                 <div className='card-text'>
-                    <p>Events</p>
-                    <p>45</p>
+                    <p>Total Sector</p>
+                    <p>145</p>
                     <div className='progress'>
                         <div class="progress-bar4"></div>
                     </div>

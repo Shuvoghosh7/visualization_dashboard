@@ -45,27 +45,16 @@ const LineChart = () => {
         }
     }
 
-    var options = {
-        responsive: true,
-        maintainAspectRation: false,
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        },
-        legend: {
-            labels: { fontSize: 26 }
-        }
-    }
+   
 
     return (
         <div>
             <div>
 
-                <h1 className='text-2xl text-center my-5'>Pestle and intensity</h1>
+                <h1 className='text-2xl text-center my-5 font-bold'>Pestle & intensity</h1>
                 <Bar
                     data={data}
-                    height={100}
+                    height={110}
                     options={options}
                 />
             </div>

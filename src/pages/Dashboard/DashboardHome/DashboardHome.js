@@ -20,13 +20,12 @@ const DashboardHome = () => {
             <div className='mt-12'>
                 <Chart/>
             </div>
-            <div>
-                <TopicandRelevance/>
-            </div>
-            <div>
+            <div className='mt-12'>
                 <LineChart/>
             </div>
-            
+            <div className='mt-12'>
+                <TopicandRelevance/>
+            </div>   
         </div>
     );
 };

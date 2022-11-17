@@ -60,10 +60,10 @@ const TopicandRelevance = () => {
         <div>
         <div>
 
-            <h1 className='text-2xl text-center my-5'>Topic and relevance</h1>
+            <h1 className='text-2xl text-center my-5 font-bold'>Topic & relevance</h1>
             <Bar
                 data={data}
-                height={100}
+                height={110}
                 options={options}
             />
         </div>
