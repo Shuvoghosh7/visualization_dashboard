@@ -1,7 +1,7 @@
 import React from 'react';
 import { Chart as ChartJS, BarElement, CategoryScale, LinearScale, PointElement, LineElement } from 'chart.js';
 
-import { Bar, Line } from 'react-chartjs-2';
+import { Line } from 'react-chartjs-2';
 import { useQuery } from 'react-query';
 
 ChartJS.register(
@@ -52,7 +52,7 @@ const LineChart = () => {
             <div>
 
                 <h1 className='text-2xl text-center my-5 font-bold'>Pestle & intensity</h1>
-                <Bar
+                <Line
                     data={data}
                     height={110}
                     options={options}

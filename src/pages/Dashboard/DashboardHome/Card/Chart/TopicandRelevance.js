@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Chart as ChartJS, BarElement, CategoryScale, LinearScale, PointElement, LineElement } from 'chart.js';
 
-import { Bar, Line } from 'react-chartjs-2';
+import { Bar } from 'react-chartjs-2';
 import { useQuery } from 'react-query';
 
 ChartJS.register(
